@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2019_12_30_220517) do
 
   create_table "albums", force: :cascade do |t|
     t.string "title"
-    t.datetime "data"
+    t.datetime "date"
     t.integer "category_id"
     t.integer "artist_id"
     t.datetime "created_at", null: false
