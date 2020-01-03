@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top has-background-dark">
   <head>
-    <title>Spotkes</title>
+    <title>Spotcode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body class="has-background-dark">
-    <%= render "shared/menu"%>
+    <%= render "shared/menu" %>
     <%= yield %>
-    <%= render "shared/toolbar"%>
+    <audio id="song-player" src="#"></audio>
+    <%= render "shared/toolbar" %>
   </body>
 </html>
