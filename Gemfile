@@ -5,7 +5,7 @@ ruby '2.6.3'
 
 
 
-gem 'devise', '~> 4.5.0'
+gem 'devise', '~> 4.7.1'
 
 gem "serviceworker-rails"
 
